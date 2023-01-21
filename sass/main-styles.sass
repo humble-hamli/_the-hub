@@ -1,0 +1,48 @@
+//colors
+$base-color: #ffeeef
+$light-color: #afafaf
+$dark-color: #181216
+
+
+// Global Styles
+:root 
+  font-size: 100%
+  line-height: 1.2
+
+
+*
+  font-family: neue-haas-grotesk-display, sans-serif
+  font-weight: 300
+  font-style: normal
+  color: $base-color
+
+
+body 
+  width: 100vw
+  height: 100vh
+
+
+
+// Light Styles
+$light-mode-bg-color: $light-color
+$light-mode-text-color: $dark-color
+
+
+@media (prefers-color-scheme: light)
+  body 
+    background-color: $light-mode-bg-color
+    color: $light-mode-text-color
+  
+  // Add more styles for light mode here
+
+
+// Dark Styles
+$dark-mode-bg-color: $dark-color
+$dark-mode-text-color: $light-color
+
+@media (prefers-color-scheme: dark) 
+  body 
+    background-color: $dark-mode-bg-color
+    color: $dark-mode-text-color
+  
+  // Add more styles for dark mode here
