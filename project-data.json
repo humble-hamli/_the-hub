@@ -1,0 +1,34 @@
+[
+    {
+        "title": "Schwarzes Schäfli",
+        "tagline": "Photoslam 2019",
+        "date": "2019",
+        "description": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.",
+        "image": "projects/schwarzes-schäfli/cover-image.png",
+        "images": [
+            "projects/schwarzes-schäfli/image-1.jpg",
+            "projects/schwarzes-schäfli/image-2.jpg",
+            "projects/schwarzes-schäfli/image-3.jpg"
+        ],
+        "tags": [
+            "project",
+            "home"
+        ]
+    },
+    {
+        "title": "Project Title 2",
+        "tagline": "Project Tagline 2",
+        "date": "2021",
+        "description": "Project Description 2",
+        "image": "path/to/image4.jpg",
+        "images": [
+            "path/to/image4.jpg",
+            "path/to/image5.jpg",
+            "path/to/image6.jpg"
+        ],
+        "tags": [
+            "project",
+            "example"
+        ]
+    }
+]
