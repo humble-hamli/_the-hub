@@ -1,9 +1,90 @@
+* {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-style: normal;
+  color: #FFEEEE;
+}
+
 body {
-  background-color: teal;
+  background-color: #100000;
+}
+
+section {
+  padding: 1.2rem;
 }
 
 h1 {
-  color: red;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.card {
+  background-color: #100000;
+}
+.card .card-header {
+  border: 1px #FFEEEE solid;
+}
+.card .card-body {
+  margin-top: 2px;
+  border: 1px #FFEEEE solid;
+}
+
+header {
+  border-bottom: 1px #FFEEEE solid;
+}
+
+.navbar {
+  color: #FFEEEE;
+}
+.navbar .navbar-brand {
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  font-size: 2rem;
+}
+.navbar .navbar-collapse {
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  font-size: 1.2rem;
+}
+.navbar .navbar-nav .nav-item {
+  text-align: center;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #FFEEEE;
+}
+.navbar .navbar-nav .nav-item :hover {
+  opacity: 1;
+  font-weight: 500;
+}
+
+.bg-dark {
+  background-color: #100000 !important;
+}
+
+.modal-xl {
+  max-width: 1110px;
+  max-height: 95vh;
+}
+.modal-xl .modal-content {
+  max-height: 95vh;
+}
+
+.modal-trigger {
+  background: none !important;
+  border: none;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+}
+
+.modal-trigger:hover {
+  color: #FF2211;
+}
+
+.modal-trigger {
+  box-shadow: none;
+}
+
+.carousel-inner {
+  background-color: #100000 !important;
 }
 
 /*# sourceMappingURL=styles.css.map */

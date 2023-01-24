@@ -72,7 +72,7 @@ fetch("project-data.json")
       cardBody.setAttribute("data-parent", "#accordion");
 
       // Show cardbody according to index
-      if (index + 1 === 1) {
+      if (index + 1 === 2) {
         cardBody.classList.add("show");
       }
 
@@ -94,6 +94,13 @@ fetch("project-data.json")
       //append the image to the figure
       figure.appendChild(projectImage);
       figure.appendChild(figcaption);
+
+      // Make Figure Clickable to activate Modal
+      figure.classList.add("modal-trigger", "btn", "btn-primary")
+      figure.setAttribute("type", "button");
+      figure.setAttribute("data-toggle", "modal");
+      figure.setAttribute("data-target", `.bd-modal-${index}`);
+
       //append the figure to colImg
       colImg.appendChild(figure);
       //append the colImg to row
@@ -101,7 +108,7 @@ fetch("project-data.json")
 
       // Create the col element for details
       const colDetails = document.createElement("div");
-      colDetails.classList.add("col-md-6");
+      colDetails.classList.add("col-md-6", "position-relative");
       // Create the project title
       const projectDetailsTitle = document.createElement("h3");
       projectDetailsTitle.innerText = project.title;
@@ -111,10 +118,17 @@ fetch("project-data.json")
       // Create the project description
       const projectDetailsDescription = document.createElement("p");
       projectDetailsDescription.innerText = project.description;
+      projectDetailsDescription.classList.add("mb-5")
+      projectDetailsDescription.classList.add("pb-5");
 
       // Create the modal trigger button
       const modalTrigger = document.createElement("button");
-      modalTrigger.classList.add("mt-3", "btn", "btn-primary", "align-bottom");
+      modalTrigger.classList.add("modal-trigger","mt-3", "btn", "btn-primary", "align-bottom", "mr-1", "float-right", "position-absolute");
+      modalTrigger.style.bottom = "10px"
+       modalTrigger.style.right = "20px";
+      modalTrigger.style.display = "inline-block"
+      modalTrigger.style.verticalAlign = "bottom !important"
+
       modalTrigger.setAttribute("type", "button");
       modalTrigger.setAttribute("data-toggle", "modal");
       modalTrigger.setAttribute("data-target", `.bd-modal-${index}`);
@@ -129,13 +143,13 @@ fetch("project-data.json")
       modal.setAttribute("aria-hidden", "true");
       //create the modal dialog element
       const modalDialog = document.createElement("div");
-      modalDialog.classList.add("modal-dialog", `modal-${index}`);
+      modalDialog.classList.add("modal-dialog", "modal-xl", `modal-${index}`);
       //create the modal content element
       const modalContent = document.createElement("div");
-      modalContent.classList.add("modal-content", "h-100");
+      modalContent.classList.add("modal-content");
       //create the project carousel element
       const projectCarousel = document.createElement("div");
-      projectCarousel.id = "carouselIndicators";
+      projectCarousel.id = `carouselIndicators${index}`;
       projectCarousel.classList.add("carousel", "slide");
       projectCarousel.setAttribute("data-ride", "carousel");
       //create the carousel indicators
@@ -144,13 +158,13 @@ fetch("project-data.json")
       //create the carousel inner element
       const carouselInner = document.createElement("div");
       carouselInner.classList.add("carousel-inner");
-      carouselInner.style.maxHeight = "95vh";
+      // carouselInner.style.maxHeight = "95vh";
 
       //loop through the project images
       project.images.forEach((image, i) => {
         //create the indicator element
         const indicator = document.createElement("li");
-        indicator.setAttribute("data-target", "#carouselIndicators");
+        indicator.setAttribute("data-target", `carouselIndicators${index}`);
         indicator.setAttribute("data-slide-to", i);
         if (i == 0) indicator.classList.add("active");
         //append the indicator to the carouselIndicators
@@ -161,7 +175,13 @@ fetch("project-data.json")
         if (i == 0) carouselItem.classList.add("active");
         //create the carousel image element
         const carouselImage = document.createElement("img");
-        carouselImage.classList.add("d-block", "w-100", "rounded");
+        carouselImage.classList.add(
+          "d-block",
+          "rounded",
+          "w-100"
+        );
+        // carouselImage.style.maxHeight ="98vh"
+
         modal.setAttribute("width", "40");
         carouselImage.src = image;
         carouselImage.alt = "Project Image";
@@ -179,7 +199,7 @@ fetch("project-data.json")
       // Create Previous Button
       const carouselControlsPrev = document.createElement("a");
       carouselControlsPrev.classList.add("carousel-control-prev");
-      carouselControlsPrev.setAttribute("href", `#carouselIndicators`);
+      carouselControlsPrev.setAttribute("href", `#carouselIndicators${index}`);
       carouselControlsPrev.setAttribute("role", "#button");
       carouselControlsPrev.setAttribute("data-slide", "prev");
 
@@ -199,7 +219,7 @@ fetch("project-data.json")
       // Create Next Button
       const carouselControlsNext = document.createElement("a");
       carouselControlsNext.classList.add("carousel-control-next");
-      carouselControlsNext.setAttribute("href", `#carouselIndicators`);
+      carouselControlsNext.setAttribute("href", `#carouselIndicators${index}`);
       carouselControlsNext.setAttribute("role", "#button");
       carouselControlsNext.setAttribute("data-slide", "next");
 

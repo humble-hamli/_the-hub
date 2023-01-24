@@ -12,13 +12,19 @@
 		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 	<!-- Styles -->
-	<!-- <link rel="stylesheet" href="css/styles.css" /> -->
+	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="css/nav-styles.css" />
+	<link rel="stylesheet" href="css/screen-fx.css" />
+	<link rel="stylesheet" href="css/screen-fx-origin.css" />
+
+	<link rel="stylesheet" href="https://use.typekit.net/lys0pci.css">
 </head>
 
-<body>
+<body class="crt">
+
 	<!-- Head -->
 	<header>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<nav class="container navbar navbar-expand-lg navbar-dark bg-dark">
 			<a class="navbar-brand" href="index.html">12Tru.</a>
 			<!-- Burger Button -->
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -26,9 +32,9 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
-			<div class="collapse navbar-collapse" id="navbarNav">
+			<div class="collapse navbar-collapse w-100" id="navbarNav">
 				<!-- Nav-items -->
-				<ul class="navbar-nav">
+				<ul class="navbar-nav w-100 d-flex justify-content-end">
 					<li class="nav-item">
 						<a class="nav-link" href="index.html">Home</a>
 					</li>
@@ -44,18 +50,19 @@
 	</header>
 
 	<!-- Main -->
-	<main class="container pt-5">
-		<div class="row">
+	<main class="container">
+		<!-- <div class="row">
 			<section class="col-md-12 mb-3">
 				<h1>TRUNINGER</h1>
 			</section>
-		</div>
+		</div> -->
 		<div class="row">
 			<section id="home" class="col-md-4">
 
-				<!-- <h1>TRUNINGER</h1> -->
-				<img style="width:100%; object-fit: cover;" src="img/bewerbungsfoto-square.jpg" alt="Profile picture" class="img-fluid mt-2">
-				
+				<h1>TRUNINGER</h1>
+				<img style="width:100%; object-fit: cover;" src="img/bewerbungsfoto-square.jpg" alt="Profile picture"
+					class="img-fluid mt-2">
+
 
 				<p class="mt-4">My name is John Doe and I am a web developer. I have experience building websites and
 					web
@@ -106,15 +113,46 @@
 			</section>
 
 			<!-- Projects -->
-			<section id="projects" class="col-md-8">
+			<section id="projects" class="col-md-8 mt-3">
 				<h2>Projects:</h2>
 				<div class="mt-2" id="accordion">
-					
-				
+
+
 				</div>
 				<p class="mt-2 ml-2"><a href="projects.html">Weitere Arbeiten...</a></p>
 			</section>
 	</main>
+	
+
+	<footer class="py-3 my-4 border-top">
+		<div class="container d-flex w-100 justify-content-end">
+
+			<div class="col-md-8 d-flex align-items-center align-self-start">
+				<a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+					<svg class="bi" width="30" height="24">
+						<use xlink:href="#bootstrap"></use>
+					</svg>
+				</a>
+				<span class="mb-3 mb-md-0 text-muted">© 2022 Cyril Truninger</span>
+			</div>
+
+			<ul class="nav col-md-2 list-unstyled d-flex flex-grow">
+				<li class="ms-3"><a class="mx-2" href="https://instagram.com" target="_blank">
+						<i class="mr-1 fab fa-instagram "></i>
+					</a>
+				</li>
+				<li class="ms-3"><a class="mx-2" href="https://instagram.com" target="_blank">
+						<i class="mr-1 fab fa-linkedin fa-2xs"></i>
+					</a>
+				<li class="ms-3">
+					<a class="mx-2" href="https://instagram.com" target="_blank">
+						<i class="mr-1 fab fa-twitter "></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+	</footer>
 
 	<!-- Scripts -->
 	<script src="scripts/sketch.js"></script>

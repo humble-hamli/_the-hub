@@ -12,20 +12,27 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css/main-styles.css" /
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/nav-styles.css" />
+    <link rel="stylesheet" href="css/screen-fx.css" />
+    <link rel="stylesheet" href="css/screen-fx-origin.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/lys0pci.css">
 </head>
 
 <body class="">
     <!-- Header -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="container navbar navbar-expand-lg navbar-dark bg-dark crt">
             <a class="navbar-brand" href="index.html">12Tru.</a>
+            <!-- Burger Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+    
+            <div class="collapse navbar-collapse w-100" id="navbarNav">
+                <!-- Nav-items -->
+                <ul class="navbar-nav w-100 d-flex justify-content-end">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
@@ -41,13 +48,12 @@
     </header>
 
     <!-- Main -->
-    <main class="container pt-5">
+    <main class="container">
         <div class="row">
 
-            <section id="projects" class="col-md-12">
-                <h1 class="mt-2 mb-2">Projects:</h1>
+            <section id="projects" class="col-md-12 pb-5">
+                <h1 class="mt-0 mb-3">Projects:</h1>
                 <div class="mt-2" id="accordion">
-                    
                 </div>
 
                 <!-- <p class="mt-2 ml-2"><a href="#projects">Weitere Projekte...</a></p> -->

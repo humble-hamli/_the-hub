@@ -8,7 +8,7 @@
         "images": [
             "projects/schwarzes-schäfli/image-1.jpg",
             "projects/schwarzes-schäfli/image-2.jpg",
-            "projects/schwarzes-schäfli/image-3.jpg"
+            "projects/schwarzes-schäfli/image-4.jpg"
         ],
         "tags": [
             "project",
@@ -16,19 +16,59 @@
         ]
     },
     {
-        "title": "Project Title 2",
-        "tagline": "Project Tagline 2",
+        "title": "Test Projekt",
+        "tagline": "Test Projekt Tagline",
         "date": "2021",
-        "description": "Project Description 2",
-        "image": "path/to/image4.jpg",
+        "description": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.",
+        "image": "projects/_test/cover-image.jpg",
         "images": [
-            "path/to/image4.jpg",
-            "path/to/image5.jpg",
-            "path/to/image6.jpg"
+          "projects/_test/image-1.jpg",
+          "projects/_test/image-2.jpg",
+          "projects/_test/image-4.jpg"
         ],
         "tags": [
             "project",
+            "home",
             "example"
         ]
+    },
+    {
+      "title": "Test Projekt",
+      "tagline": "Test Projekt Tagline",
+      "date": "2021",
+      "description": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.",
+      "image": "projects/_test/cover-image.jpg",
+      "images": [
+        "projects/_test/image-1.jpg",
+        "projects/_test/image-2.jpg",
+        "projects/_test/image-4.jpg"
+      ],
+      "tags": ["project", "example", "home"]
+    },
+    {
+      "title": "Test Projekt",
+      "tagline": "Test Projekt Tagline",
+      "date": "2021",
+      "description": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.",
+      "image": "projects/_test/cover-image.jpg",
+      "images": [
+        "projects/_test/image-1.jpg",
+        "projects/_test/image-2.jpg",
+        "projects/_test/image-4.jpg"
+      ],
+      "tags": ["project", "example"]
+    },
+    {
+      "title": "Test Projekt",
+      "tagline": "Test Projekt Tagline",
+      "date": "2021",
+      "description": "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.",
+      "image": "projects/_test/cover-image.jpg",
+      "images": [
+        "projects/_test/image-1.jpg",
+        "projects/_test/image-2.jpg",
+        "projects/_test/image-4.jpg"
+      ],
+      "tags": ["project", "example"]
     }
 ]
